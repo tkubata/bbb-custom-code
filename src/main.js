@@ -1,11 +1,10 @@
-let transitionTrigger = document.querySelector('.transition-trigger')
-let transition = document.querySelector('.transition')
+let loaderTrigger = document.querySelector('.loader__trigger')
+let loaderWrapper = document.querySelector('.loader__wrapper')
 
 window.addEventListener('load', () => {
   if (sessionStorage.length === 0) {
-    transition.style.display = 'flex'
+    loaderWrapper.style.display = 'block'
     transitionTrigger.click()
     sessionStorage.setItem('Loaded', 'True')
-  } else {
-  }
+  } else { }
 })
